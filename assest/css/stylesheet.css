@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+
+.inputArea{
+    font-size: 25px;  
+    border-radius: 25px;
+    padding: 15px;
+    width:100%;
+}
+
+
+body{
+    background:linear-gradient(135deg, #76ea93,#cff03e,#76c1ea);
+    background-repeat: none;
+    height: 100vh;
+}
+/* .row1{
+background-color: rgb(215, 250, 238);
+} */
+
+.text{
+    padding: 8px;
+}
+
+.list-item{
+    display: flex;
+    background-color: rgb(244, 245, 247);
+    margin:10px;
+    border-radius: 25px;
+    font-size: 20px;  
+    padding: 12px;
+    width: 100%;
+}
+
+
+.buttonA{
+    border-radius: 80px;
+    height: 60px;
+    width: 60px;
+}
+
+.word{
+    text-decoration: line-through;
+}
+
+
