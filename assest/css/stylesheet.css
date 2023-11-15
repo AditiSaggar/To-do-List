@@ -19,9 +19,7 @@ body{
     background-repeat: none;
     height: 100vh;
 }
-/* .row1{
-background-color: rgb(215, 250, 238);
-} */
+
 
 .text{
     padding: 8px;
@@ -44,7 +42,8 @@ background-color: rgb(215, 250, 238);
     width: 60px;
 }
 
-.word{
+/*when clicked on the task it will add strivk out text*/
+.completedTask{
     text-decoration: line-through;
 }
 

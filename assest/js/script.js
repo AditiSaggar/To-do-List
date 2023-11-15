@@ -1,37 +1,42 @@
 let input = document.getElementById("textArea");
 let list=document.getElementById("list");
 
+ //Create a new task when click on the addTask 
+ //warning message when textArea is empty and we click on the addtask button
  function addTask(){
   if(textArea.value ===""){
-    alert("Write the task into the textBox !!!");
+    alert("Write the task into the textBox !!!"); 
   }
+
+ // Create a new list item when clicking on the addTask button
   else{
-        document.querySelector('#list').innerHTML +=`
+        document.querySelector('#list').innerHTML +=` 
         
         <div class="list-item justify-content-between">
                   <h3 class="text">${document.querySelector("#textArea").value}</h3>
               <div class="btn1" >
-                <button class="buttonA btn btn-success" id='execute'><i class="fa-regular fa-circle-check fa-2xl"></i></button>
-                <button class="buttonA btn btn-danger" id="delete" ><i class="fa-regular fa-circle-xmark fa-2xl"></i></button>
+                <button class="buttonA btn btn-success execute "><i class="fa-regular fa-circle-check fa-2xl"></i></button>
+                <button class="buttonA btn btn-danger delete"><i class="fa-regular fa-circle-xmark fa-2xl"></i></button>
               </div>
             </div>
         `;
-    
-          let delete1= document.querySelectorAll('#delete')
-              for(let i =0; i<=delete1.length;i++){
-              delete1[i].onclick=function(){
-                this.parentNode.parentNode.remove();
-              }  
-            }
+    //After adding the task it will empty the text area
+        textArea.value ="";
 
-            list.addEventListener('click', function (f) {
-              if (f.target.classList.contains('execute')) {
-                f.target.parentElement.classList.toggle('word');
-              }
-            
+          // Deletebutton will delete the added task 
+            let deleteButtons =document.querySelectorAll('.delete');
+            deleteButtons.forEach(button =>{
+                button.onclick =function(){
+                this.parentElement.parentElement.remove();
+                };
+            });
+
+            //executebutton when click on the button it will display the tastk is execute and line through the completedtask
+            let executeButtons = document.querySelectorAll('.execute');
+            executeButtons.forEach(button => {
+                button.onclick = function() {
+                this.parentElement.parentElement.querySelector('.text').classList.toggle('completedTask');
+                };
             });
     }
-  }
-
-
- 
+}
