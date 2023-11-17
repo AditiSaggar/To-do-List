@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 25px;
+    
+}
+
+.inputArea{
+    font-size: 21px;  
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%; 
+    
+}
+
+#validationMessage{
+    color: rgb(241, 13, 13);
+    font-size:large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 20px;
+    
+}
+
+body{
+    background:linear-gradient(135deg, #76ea93,#cff03e,#ea9776,#76cdea);
+    background-repeat: none;
+    height: 100vh;
+}
+
+
+.text{
+    padding: 10px;
+    
+}
+
+.list-item{
+    display: flex;
+    background-color: rgb(244, 245, 247);
+    /* margin:5px; */
+    border-radius: 30px;
+    font-size: 10px;  
+    padding: 5px;
+    /* width: 100%; */
+}
+
+
+.buttonA{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+/*when clicked on the task it will add strick out text*/
+.completedTask{
+    text-decoration: line-through;
+}
+
+
