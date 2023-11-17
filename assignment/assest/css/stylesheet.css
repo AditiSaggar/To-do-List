@@ -40,11 +40,11 @@ body{
 .list-item{
     display: flex;
     background-color: rgb(244, 245, 247);
-    /* margin:5px; */
+    margin: 20px;
     border-radius: 30px;
     font-size: 10px;  
     padding: 5px;
-    /* width: 100%; */
+    width: 100%; 
 }
 
 
@@ -52,7 +52,7 @@ body{
     border-radius: 50px;
     height: 50px;
     width: 50px;
-    margin: 5px;
+    margin: 5px 15px 5px 0px;
 }
 
 /*when clicked on the task it will add strick out text*/
